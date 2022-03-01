@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>雨之后软件下载</title>
-</head>
 <body>
-    <a href="/download/app-release.apk" download="app-release.apk">点击下载</a>
+<script>
+var a=52;	
+function aclick(self){
+   if(self.href=="https://xiaoshangkou.com/download/app-release.apk"){
+	a=a+1;
+	document.getElementById('div').innerHTML = a;
+}
+
+}
+</script>
+<a href="https://xiaoshangkou.com/download/app-release.apk" onclick='aclick(this)'>测试1</a>
+<div id='div'>52</div>
+ 
 </body>
 </html>
